@@ -205,8 +205,8 @@ const Search: React.FC = () => {
           <img src={zeviLogo} alt="logo" className="w-16 m-4" />
         </div>
       </div>
-      <div className="h-[90%] flex">
-        <div className="w-[25%]  p-4 overflow-y-auto">
+      <div className="h-[90%] md:flex w-full">
+        <div className=" md:w-[30%]  lg:w-[25%]  p-4 overflow-y-auto">
           <Accordion defaultIndex={[0, 1, 2]} allowMultiple>
             <AccordionItem>
               <h2>
@@ -310,8 +310,8 @@ const Search: React.FC = () => {
             </AccordionItem>
           </Accordion>
         </div>
-        <div className="w-[75%] h-full overflow-y-auto">
-          <div className="grid grid-cols-4 gap-x-2 gap-y-4 py-4 px-2 h-full">
+        <div className=" md:w-[70%] lg:w-[75%] h-full overflow-y-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-2 gap-y-4 py-4 px-2 h-full">
             {data.length !== 0 &&
               data.map((item) => (
                 <Product
