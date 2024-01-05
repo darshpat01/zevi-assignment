@@ -91,7 +91,7 @@ const defaultData = [
     img: img7,
   },
   {
-    id: 7,
+    id: 8,
     name: "Round neck cotton Tee",
     brand: "H&M",
     price: 2099,
