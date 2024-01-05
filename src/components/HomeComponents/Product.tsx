@@ -2,20 +2,27 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import img1 from "../../images/img1.jpeg";
 import { useState } from "react";
 
-// type Props = {
-//   img: string;
-//   title: string;
-//   p1: string;
-//   p2: string;
-//   rating: number;
-//   ratingNumber: number;
-// };
+type props = {
+  id: number;
+  name: string;
+  brand: string;
+  price: number;
+  rating: number;
+  img: string;
+};
 
-const Product: React.FC = () => {
+const Product: React.FC<props> = ({ id, name, brand, price, rating, img }) => {
   const [wishlist, setWishlist] = useState(false);
+  const renderStars = () => {
+    return Array.from({ length: rating }, (_, index) => (
+      <span key={index} className="material-icons text-yellow-500">
+        star
+      </span>
+    ));
+  };
   return (
     <>
-      <div className="flex flex-col justify-center h-full ">
+      <div>
         <div className="group w-[239px] h-[325px] relative rounded-sm hover:cursor-pointer ">
           <div className="invisible group-hover:visible absolute z-99 bottom-0  bg-indigo-500 bg-opacity-40 w-full text-white flex justify-center items-center text-xl p-2">
             View Product
@@ -39,16 +46,9 @@ const Product: React.FC = () => {
         <div className="pt-2 ">Round neck cotton Tee</div>
         <div className="flex">
           <div className=" line-through text-gray-500 ">Rs.599</div>
-          <div className=" text-blue-500 font-bold pl-2">Rs.599</div>
+          <div className=" text-blue-500 font-bold pl-2">Rs.{price}</div>
         </div>
-        <div className="flex items-center">
-          <span className="material-icons text-yellow-500">star</span>
-          <span className="material-icons text-yellow-500">star</span>
-          <span className="material-icons text-yellow-500">star</span>
-          <span className="material-icons text-yellow-500">star</span>
-          <span className="material-icons text-yellow-500">star</span>
-          <span className="text-sm text-gray-500">(210)</span>
-        </div>
+        <div className="flex items-center">{renderStars()}</div>
       </div>
     </>
   );
