@@ -1,9 +1,16 @@
 import searchImg from "../images/search.svg";
 import { useState, useEffect } from "react";
 import zeviLogo from "../images/zevi-logo.png";
-import img1 from "../images/img1.jpeg";
 import Product from "../components/HomeComponents/Product";
 import { Checkbox, RadioGroup, Radio, Stack } from "@chakra-ui/react";
+import img1 from "../images/s-img-1.jpeg";
+import img2 from "../images/s-img-2.jpeg";
+import img3 from "../images/s-img-3.jpeg";
+import img4 from "../images/s-img-4.jpeg";
+import img5 from "../images/s-img-5.jpeg";
+import img6 from "../images/s-img-6.jpeg";
+import img7 from "../images/s-img-7.jpeg";
+import img8 from "../images/s-img-8.jpeg";
 
 import {
   Accordion,
@@ -21,11 +28,10 @@ type Product = {
   price: number;
   rating: number;
   img: string;
-  // add other fields as per your data structure
 };
 
-type Brand = string; // If brands are just strings, otherwise define a more complex type
-type Rating = number; // Adjust this according to how you store ratings
+type Brand = string;
+type Rating = number;
 
 const defaultData = [
   {
@@ -38,19 +44,19 @@ const defaultData = [
   },
   {
     id: 2,
-    name: "Round neck cotton Tee",
+    name: " High waist trousers",
     brand: "Mango",
-    price: 599,
+    price: 749,
     rating: 4,
-    img: img1,
+    img: img2,
   },
   {
     id: 3,
-    name: "Round neck cotton Tee",
+    name: "High neck pullover",
     brand: "Mango",
     price: 1099,
     rating: 4,
-    img: img1,
+    img: img3,
   },
   {
     id: 4,
@@ -58,7 +64,7 @@ const defaultData = [
     brand: "Mango",
     price: 1099,
     rating: 2,
-    img: img1,
+    img: img4,
   },
   {
     id: 5,
@@ -66,7 +72,7 @@ const defaultData = [
     brand: "Mango",
     price: 699,
     rating: 4,
-    img: img1,
+    img: img5,
   },
   {
     id: 6,
@@ -74,7 +80,7 @@ const defaultData = [
     brand: "Mango",
     price: 299,
     rating: 4,
-    img: img1,
+    img: img6,
   },
   {
     id: 7,
@@ -82,7 +88,15 @@ const defaultData = [
     brand: "H&M",
     price: 1099,
     rating: 1,
-    img: img1,
+    img: img7,
+  },
+  {
+    id: 7,
+    name: "Round neck cotton Tee",
+    brand: "H&M",
+    price: 2099,
+    rating: 3,
+    img: img8,
   },
 ];
 
@@ -105,11 +119,6 @@ const Search: React.FC = () => {
   };
 
   const handleRatingsChange = (rating: Rating) => {
-    // setSelectedRatings((prevSelectedRatings) =>
-    // prevSelectedRatings.includes(rating)
-    //   ? prevSelectedRatings.filter((r) => r !== rating)
-    //   : [...prevSelectedRatings, rating]
-    // );
     const newRatings = selectedRatings.includes(rating)
       ? selectedRatings.filter((r) => r !== rating)
       : [...selectedRatings, rating];
@@ -315,7 +324,6 @@ const Search: React.FC = () => {
                   img={item.img}
                 />
               ))}
-            {/* return no data to show  */}
             {data.length === 0 && (
               <div className="text-2xl text-center col-span-4">
                 No Products to show

@@ -1,5 +1,4 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import img1 from "../../images/img1.jpeg";
 import { useState } from "react";
 
 type props = {
@@ -29,7 +28,7 @@ const Product: React.FC<props> = ({ id, name, brand, price, rating, img }) => {
           </div>
           <LazyLoadImage
             alt="dress"
-            src={img1}
+            src={img}
             className="w-full h-full rounded-sm "
           />
           <span
