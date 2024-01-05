@@ -107,11 +107,11 @@ const Search: React.FC = () => {
   const [data, setData] = useState<Product[]>(defaultData); // Assuming your mock data matches the Product type
 
   const handleBrandChange = (brand: Brand) => {
-    setSelectedBrands((prevSelectedBrands) =>
-      prevSelectedBrands.includes(brand)
-        ? prevSelectedBrands.filter((b) => b !== brand)
-        : [...prevSelectedBrands, brand]
-    );
+    const newBrands = selectedBrands.includes(brand)
+      ? selectedBrands.filter((b) => b !== brand)
+      : [...selectedBrands, brand];
+    console.log(newBrands);
+    setSelectedBrands(newBrands);
   };
 
   const handlePriceChange = (event: any) => {
