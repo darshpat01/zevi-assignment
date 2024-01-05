@@ -19,7 +19,7 @@ interface props {
 
 const SearchResults: React.FC<props> = ({ results }) => {
   return (
-    <div className="hidden peer-focus-within/search:block bg-white shadow-lg mt-4 rounded-sm h-[100%] align-middle w-full p-6">
+    <div className="hidden overflow-y-auto peer-focus-within/search:block bg-white shadow-lg mt-4 rounded-sm h-[100%] align-middle w-full p-6">
       <div>
         <div className="font-semibold text-xl mb-3">Latest Trends</div>
         <div className="flex flex-wrap  justify-between">
