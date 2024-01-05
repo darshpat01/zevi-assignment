@@ -114,7 +114,7 @@ const Search: React.FC = () => {
           </Accordion>
         </div>
         <div className="w-[75%] h-full overflow-y-auto">
-          <div className="grid grid-cols-4 gap-x-2 gap-y-4 py-4 h-full">
+          <div className="grid grid-cols-4 gap-x-2 gap-y-4 py-4 px-2 h-full">
             <Product />
             <Product />
             <Product />

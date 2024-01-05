@@ -46,10 +46,10 @@ const SearchBar: React.FC<props> = ({ setResults }) => {
   };
 
   return (
-    <div className="flex bg-white rounded-xl min-h-12 items-center font-light px-5 py-3 w-[80%]">
+    <div className="peer/search flex bg-white rounded-xl h-14 items-center font-light px-5 py-3 w-[80%]">
       <input
         type="text"
-        className="w-full h-full rounded-lg p-2 focus:outline-none text-2xl tracking-wide"
+        className=" w-full h-full rounded-lg p-2 focus:outline-none text-2xl tracking-wide"
         placeholder="Search"
         onChange={(e) => handleSearch(e.target.value)}
       />

@@ -15,8 +15,11 @@ const Product: React.FC = () => {
   const [wishlist, setWishlist] = useState(false);
   return (
     <>
-      <div className="flex flex-col justify-center items-center h-full">
-        <div className="w-[239px] h-[325px] relative rounded-sm hover:cursor-pointer">
+      <div className="flex flex-col justify-center h-full ">
+        <div className="group w-[239px] h-[325px] relative rounded-sm hover:cursor-pointer ">
+          <div className="invisible group-hover:visible absolute z-99 bottom-0  bg-indigo-500 bg-opacity-40 w-full text-white flex justify-center items-center text-xl p-2">
+            View Product
+          </div>
           <LazyLoadImage
             alt="dress"
             src={img1}
