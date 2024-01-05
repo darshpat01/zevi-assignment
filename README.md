@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# Zevi Frontend Assignment
+ 
+Simplified Search Feature + Responsive Design
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Routes: 
 
-## Available Scripts
+Home Page : https://zevi-assignment-kappa.vercel.app/
 
-In the project directory, you can run:
+Search Page https://zevi-assignment-kappa.vercel.app/search/
+## Screenshots
 
-### `npm start`
+Home Page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<img width="1507" alt="home-page" src="https://github.com/darshpat01/zevi-assignment/assets/68650149/3b410e28-4ed2-4b25-b83e-96ecb8ce79d3">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Search Page
 
-### `npm test`
+<img width="1512" alt="search-page" src="https://github.com/darshpat01/zevi-assignment/assets/68650149/23a8944a-444c-4bbe-bacd-e08e72073442">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Responsive
 
-### `npm run build`
+<img width="303" alt="r1" src="https://github.com/darshpat01/zevi-assignment/assets/68650149/57439201-f8b4-4d8f-86b3-c9aac949ed1a">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img width="303" alt="r2" src="https://github.com/darshpat01/zevi-assignment/assets/68650149/4e46af05-4584-4e80-9f6c-e57dd7fab618">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack
+React, TailwindCSS, Typescript, Chakra UI
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
